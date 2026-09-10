@@ -1,0 +1,165 @@
+/* ================================
+   Andrea's Technical Blog
+   Sage Green + Cream Theme
+   ================================ */
+
+/* Entire page */
+body {
+    background-color: #f7f5ed;
+    color: #2f3e35;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main article area */
+body {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+/* Top blog header */
+.site-header {
+    border-bottom: 1px solid #a8b9a5;
+    padding-bottom: 18px;
+    margin-bottom: 55px;
+}
+
+.blog-name {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3f5f4a;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+/* Main title */
+h1 {
+    color: #3f5f4a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+/* Section titles */
+h2 {
+    color: #52705a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #a8b9a5;
+}
+
+/* Smaller headings */
+h3 {
+    color: #66806d;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* Bold text */
+strong {
+    color: #3f5f4a;
+}
+
+/* Links */
+a {
+    color: #52705a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7d9982;
+    text-decoration: underline;
+}
+
+/* Images and plots */
+img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 35px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(47, 62, 53, 0.15);
+}
+
+/* Image captions */
+.caption {
+    text-align: center;
+    color: #6f786f;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+/* Code blocks */
+pre {
+    background-color: #e8ede5;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    border-left: 5px solid #7d9982;
+}
+
+/* Inline code */
+code {
+    font-family: "Courier New", monospace;
+}
+
+/* Quotes / important notes */
+blockquote {
+    background-color: #e8ede5;
+    border-left: 5px solid #7d9982;
+    margin: 30px 0;
+    padding: 15px 25px;
+    border-radius: 6px;
+}
+
+/* Lists */
+li {
+    margin-bottom: 8px;
+}
+
+/* Horizontal line */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #a8b9a5;
+    margin: 45px 0;
+}
+
+/* Makes website look good on phones */
+@media (max-width: 700px) {
+    body {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
