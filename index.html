@@ -27,15 +27,16 @@
         Figure 1. Raw atmospheric CO2 data from the Mauna Loa dataset.
     </p>
 
-    <h2>Kernel Design</h2>
-
-    <p>
-        After cleaning and preprocessing, the first step is to divide the data and the target. Since the data is in date format, it will be turned into a numeric number for analysis. The next pivotal step in the project is to design the proper kernel to fit with this data type. In earlier EDA, we saw that there was an upward rising trend in the data. With years increasing, CO2 concentration also increases, but there is a pronounced seasonality with smaller irregularities. Using multiple different kernels will tell the Gaussian process these different characteristics in the data. The first RBF kernel has a large length-scale parameter. This will fit well with the data because the Radial Basis Function will capture the data points' smooth long-term trend. Length-scale controls how quickly a function is able to change. Using a long length-scale will cause slower, smoother change since we are wanting to capture a slow change over a long period of time. The next RBF component is multiplied with a periodic kernel which captures the yearly seasonal pattern. That way the seasonality can gradually change over time, rather than the same pattern repeating the whole time. This creates a locally periodic kernel. The irregularities in the data are captured by using a Rational Quadratic kernel because it can handle irregularities occurring at different length-scales. Another RBF kernel is used to account for correlated noise in the data. For example, the CO2 concentration one day might also be similar to days prior and after. Then a white noise component is used to capture completely random variation in the data, uncorrelated noise.
-    </p>
     <img src="images/monthly_co2_measurements.png" alt="Raw Mauna Loa CO2 data">
 
     <p class="caption">
         Figure 2. Monthly average atmospheric CO2 data from the Mauna Loa dataset.
+    </p>
+    
+    <h2>Kernel Design</h2>
+
+    <p>
+        After cleaning and preprocessing, the first step is to divide the data and the target. Since the data is in date format, it will be turned into a numeric number for analysis. The next pivotal step in the project is to design the proper kernel to fit with this data type. In earlier EDA, we saw that there was an upward rising trend in the data. With years increasing, CO2 concentration also increases, but there is a pronounced seasonality with smaller irregularities. Using multiple different kernels will tell the Gaussian process these different characteristics in the data. The first RBF kernel has a large length-scale parameter. This will fit well with the data because the Radial Basis Function will capture the data points' smooth long-term trend. Length-scale controls how quickly a function is able to change. Using a long length-scale will cause slower, smoother change since we are wanting to capture a slow change over a long period of time. The next RBF component is multiplied with a periodic kernel which captures the yearly seasonal pattern. That way the seasonality can gradually change over time, rather than the same pattern repeating the whole time. This creates a locally periodic kernel. The irregularities in the data are captured by using a Rational Quadratic kernel because it can handle irregularities occurring at different length-scales. Another RBF kernel is used to account for correlated noise in the data. For example, the CO2 concentration one day might also be similar to days prior and after. Then a white noise component is used to capture completely random variation in the data, uncorrelated noise.
     </p>
 
     <h2>Gaussian Process Regression</h2>
