@@ -2,6 +2,8 @@
 
 **STAT 5720 | Graduate Data Science Coursework**
 
+https://andreaycaceres.github.io/gaussian-process-co2-forecasting/
+
 ## About This Repository
 
 This repository documents my work with Gaussian Processes as part of
