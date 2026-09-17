@@ -50,11 +50,40 @@
         Figure 3. Monthly average atmospheric CO2 data & Gaussian Process Forecast.
     </p>
 
-    <h2>Results</h2>
+    <h2>Sources</h2>
+
+<div class="sources">
 
     <p>
-        To answer the question of what patterns explain why CO2 moves below or above the average we discovered that the long term trend is a large part of the signal in the Gaussian process. The long term trend has an amplitude of approximately 45 ppm and has a length scale of 52 years. Therefore, the trend is changing very slowly. The periodic component has an amplitude of approximately 2.6 ppm. Therefore, the seasonal variation is small compared to the long term trend. The periodic length-scale became 1.5 once the model learned how smooth the yearly pattern was. The model learned a decay time of approximately 90 years, meaning that the seasonal pattern did not change quickly and was consistent over a long span of time. Since this is such a slow change over time, we can say there is a consistent yearly pattern. The correlated noise of 0.2 ppm is quite small, with a length scale of approximately 0.12 years and a white-noise with a contribution of approximately 0.04 ppm. Thus, the overall noise level is very small, indicating that the data can be very well explained by the model. A limitation that could occur is if there was a large gap of years with missing data. The Gaussian process could make predictions for the gap based on the patterns in the observed data, but uncertainty would increase since random noise/small irregularities from that time would not be accounted for. Overall, the model would perform well if the gap was not very large since the long-term trend has a length scale of 52 years and there is a yearly repetition decaying over approximately 90 years.
+        Team, GML Web. “Trends in CO2 - NOAA Global Monitoring Laboratory.”
+        <em>GML</em>,
+        <a href="https://gml.noaa.gov/ccgg/trends/monthly.html" target="_blank">
+            gml.noaa.gov/ccgg/trends/monthly.html
+        </a>.
+        Accessed 8 Sept. 2026.
     </p>
+
+    <p>
+        “CO2 Levels Now Higher than Any Time in the Last 23 Million Years.”
+        <em>Ray P. Authement College of Sciences</em>, 6 June 2020,
+        <a href="https://sciences.louisiana.edu/news-events/news/20200606/co2-levels-now-higher-any-time-last-23-million-years"
+           target="_blank">
+            sciences.louisiana.edu/news-events/news/20200606/co2-levels-now-higher-any-time-last-23-million-years
+        </a>.
+    </p>
+
+    <p>
+        Roelants, Peter. “Gaussian Process.”
+        <em>GitHub</em>, peterroelants.github.io,
+        <a href="https://github.com/peterroelants/peterroelants.github.io/tree/main/notebooks/gaussian_process"
+            target="_blank">
+            github.com/peterroelants/peterroelants.github.io/tree/main/notebooks/gaussian_process
+        </a>.
+    </p>
+
+</div>
+
+</main>
 
 </body>
 </html>

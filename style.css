@@ -141,6 +141,26 @@ hr {
     margin: 45px 0;
 }
 
+/* Sources */
+.sources {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.sources p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    padding-left: 30px;
+    text-indent: -30px;
+}
+
+.sources a {
+    color: #52705a;
+    font-weight: normal;
+    overflow-wrap: break-word;
+}
+
 /* Makes website look good on phones */
 @media (max-width: 700px) {
     body {
